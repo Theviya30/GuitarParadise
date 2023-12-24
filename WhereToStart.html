@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Paradise</title>
+</head>
+
+<style media="screen">
+  .header {
+    background-color: #fbba07;
+    overflow: hidden;
+  }
+
+  .header a {
+    float: left;
+    color: #545454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .header a:hover {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header a.current {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  hr {
+    height: 2px;
+    width: 100%;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  #head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    color: #fbba07;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  .responsive {
+    width: 30%;
+    height:auto;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+  #url {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+li{
+  padding: 10px
+}
+#title{
+  font-size: 100px;
+  margin: 40px;
+  text-align: center;
+}
+#logo{
+  height: 140px;
+  width: 140px;
+}
+</style>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 id="title"><img src="pictures\GUITAR.jpg" alt="logo" id="logo"> Guitar Paradise</h1>
+    <div class="header">
+      <a href="TypesOfGuitars.html">Types of guitars</a>
+      <a href="ThingsNeededToStart.html">Things needed to start</a>
+      <a class="current" href="#">Where to start</a>
+      <a href="OtherResources.html">Other resources</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section id="head">
+    <h1>Where To Start</h1>
+    <p>Here you will get the resources to learn basic guitar
+    <p>
+  </section>
+  <hr>
+  <h2>This are some easy guitar chords for beginners</h2>
+  <img src="pictures\basic_chords.png" class="responsive" alt="basic chords">
+  <p>This are some songs you can play with the basic chords</p>
+  <ul>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/one-direction/18-chords-1678182">18 by One direction (need capo)</a></li>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/john-legend/all-of-me-chords-1432996">All Of Me by John Legend (need capo)</a> </li>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/ruth-b-/dandelions-chords-3096686">Dandelions by Ruth B. (need capo)</a> </li>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/ruth-b-/lost-boy-chords-1705459">Lost Boy by Ruth B. (capo not need)</a> </li>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/billie-eilish/ocean-eyes-chords-1834352">Ocean Eyes by Billie Eilish (capo not needed)</a> </li>
+    <li> <a id="url" href="https://tabs.ultimate-guitar.com/tab/the-neighbourhood/sweater-weather-chords-1447523">Sweater Weather by The Neighbourhood (need capo)</a> </li>
+  </ul>
+  <p>This is a video on how to play barre chords</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qPJKtFi2PmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Paradise</title>
+</head>
+<style media="screen">
+  .header {
+    background-color: #fbba07;
+    overflow: hidden;
+  }
+
+  .header a {
+    float: left;
+    color: #545454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .header a:hover {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header a.current {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  #head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  h1 {
+    color: #fbba07;
+  }
+
+  #URL {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+
+  table,
+  tr,
+  th {
+    padding: 10px;
+  }
+
+  table,
+  tr,
+  td {
+    padding: 10px;
+  }
+
+  #grey {
+    font-weight: bold;
+    background-color: #fbba07;
+    color: black;
+  }
+
+  #video {
+    padding-top: 20px;
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width: 75%;
+    height: 75%;
+  }
+  #title{
+    font-size: 100px;
+    margin: 40px;
+    text-align: center;
+  }
+  #logo{
+    height: 140px;
+    width: 140px;
+  }
+</style>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 id="title"><img src="pictures\GUITAR.jpg" alt="logo" id="logo"> Guitar Paradise</h1>
+    <div class="header">
+      <a href="TypesOfGuitars.html">Types of guitars</a>
+      <a href="ThingsNeededToStart.html">Things needed to start</a>
+      <a href="WhereToStart.html">Where to start</a>
+      <a class="current" href="#">Other resources</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section id="head">
+    <h1>Other Resources</h1>
+    <p>Resources avaliable for guitar player in any skill level
+    <p>
+  </section>
+  <hr>
+  <div style="overflow-x:auto;">
+    <table border="1">
+      <tr id="grey">
+        <th>Name of resource</th>
+        <th>Description of resource</th>
+        <th>URL to resource website</th>
+        <th>URL to download resource app</th>
+      </tr>
+      <tr>
+        <td id="grey">Ultimate guitar</td>
+        <td>It is a source of guitar tabs and chords</td>
+        <td> <a id="URL" href="https://www.ultimate-guitar.com/">https://www.ultimate-guitar.com/</a> </td>
+        <td> <a id="URL" href="https://play.google.com/store/apps/details?id=com.ultimateguitar.tabs&hl=en&gl=US">https://play.google.com/store/apps/details?id=com.ultimateguitar.tabs&hl=en&gl=US</a> </td>
+      </tr>
+      <tr>
+        <td id="grey">GuitarTuna</td>
+        <td>It is guitar tuner app</td>
+        <td> <a id="URL" href="https://yousician.com/guitartuna">https://yousician.com/guitartuna</a> </td>
+        <td> <a id="URL" href="https://play.google.com/store/apps/details?id=com.ovelin.guitartuna&hl=en_SG&gl=US">https://play.google.com/store/apps/details?id=com.ovelin.guitartuna&hl=en_SG&gl=US</a> </td>
+      </tr>
+      <tr>
+        <td id="grey">Fingerpick Any Song on the Guitar for <br>
+          Beginners - Easy Fingerpicking Exercises</td>
+        <td>It is a video about fingerpicking </td>
+        <td colspan="2"> <a id="URL" href="https://youtu.be/0LPU5vvHcbQ">https://youtu.be/0LPU5vvHcbQ</a> </td>
+      </tr>
+      <tr>
+        <td id="grey">Metronome</td>
+        <td>It is a tool that helps you play rhythems accurately</td>
+        <td> <a id="URL" href="https://stonekick.com/metronome.html">https://stonekick.com/metronome.html</a> </td>
+        <td> <a id="URL" href="https://play.google.com/store/apps/dev?id=4635242855942916199">https://play.google.com/store/apps/dev?id=4635242855942916199</a> </td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <div class="container">
+    <iframe width="560" height="315" class="responsive-iframe" src="https://www.youtube.com/embed/_Vrtqe0Dcog" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="container">
+    <iframe width="560" height="315" class="responsive-iframe" src="https://www.youtube.com/embed/eWy4WxRHqs4" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</body>
+
+</html>

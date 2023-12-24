@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Paradise</title>
+</head>
+<style media="screen">
+  .header {
+    background-color: #fbba07;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .header a {
+    float: left;
+    color: #545454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .header a:hover {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  /* Add a color to the active/current link */
+  .header a.current {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .header .icon {
+    display: none;
+  }
+
+  h1 {
+    color: #fbba07;
+  }
+/*
+  img,
+  #one {
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+  }
+
+  img,
+  #two {
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 10px;
+  }
+
+*/
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  #head {
+    color: white;
+    text-align: center;
+  }
+
+  span {
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    font-size: 30px
+  }
+
+  #url {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  .responsive {
+    width: 50%;
+    height:auto;
+  }
+
+img {
+  margin: 10px;
+}
+#title{
+  font-size: 100px;
+  margin: 40px;
+  text-align: center;
+}
+#logo{
+  height: 140px;
+  width: 140px;
+}
+</style>
+
+<body>
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 id="title"><img src="pictures\GUITAR.jpg" alt="logo" id="logo"> Guitar Paradise</h1>
+    <div class="header">
+      <a href="TypesOfGuitars.html">Types of guitars</a>
+      <a class="current" href="#">Things needed to start</a>
+      <a href="WhereToStart.html">Where to start</a>
+      <a href="OtherResources.html">Other resources</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section id="head">
+    <h1>Things needed to start</h1>
+    <p>This are the things you need to start playing a guitar</p>
+    <hr>
+  </section>
+  <ul>
+    <li><span>A Guitar</span>: Well that was obvious!!</li>
+    <img id="one" src="pictures/steel string guitar.jpg" class="responsive" alt="steel string guitar">
+    <li><span>A cable and an amp</span>: This is only needed if you are going to use a electric guitar.</li>
+    <img id="two" src="pictures\guitar amp and cable.jpg" class="responsive" alt="guitar amp and cable">
+    <li><span>A Guitar Pick</span>: Well this is optional but still recommended</li>
+    <img id="one" src="pictures\guitar pick.jpg" class="responsive" alt="guitar pick">
+    <li><span>A Capo</span>: This is also optional but having it will allow you to play more songs</li>
+    <img id="one" src="pictures\guitar capo.jpeg" class="responsive" alt="guitar capo">
+    <li><span>A Guitar Tuner/Tuner App</span>: This is a 100% a essential, but you do not have to buy the tuner.<br>Using a tuner app is mor beginner-friendly</li>
+    <img id="two" src="pictures\guitar tuner.webp" class="responsive" alt="guitar tuner"><br>This is a called <a id="url" href="https://play.google.com/store/apps/details?id=com.ovelin.guitartuna&hl=en_SG&gl=US">GuitarTuna</a><br>
+    <img id="two" src="pictures\guitar tuner app.webp" class="responsive" alt="guitar tuner app">
+
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Paradise</title>
+</head>
+
+<style media="screen">
+  .header {
+    background-color: #fbba07;
+    overflow: hidden;
+  }
+
+  .header a {
+    float: left;
+    color: #545454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .header a:hover {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header a.current {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  hr {
+    height: 2px;
+    width: 100%;
+  }
+
+  h1 {
+    color: #fbba07;
+    text-align: center;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  #main {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  #second {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  span {
+    font-style: italic;
+    color: #fbba07;
+    font-weight: bold;
+  }
+
+  #head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  #p {
+    text-decoration: underline;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  .responsive {
+    width: 50%;
+    height: auto;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30%;
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width: 50%;
+    height: 80%;
+  }
+  #title{
+    font-size: 100px;
+    margin: 40px;
+    text-align: center;
+  }
+  #logo{
+    height: 140px;
+    width: 140px;
+  }
+</style>
+
+<body>
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 id="title"><img src="pictures\GUITAR.jpg" alt="logo" id="logo"> Guitar Paradise</h1>
+    <div class="header">
+      <a class="current" href="#">Types of guitars</a>
+      <a href="ThingsNeededToStart.html">Things needed to start</a>
+      <a href="WhereToStart.html">Where to start</a>
+      <a href="OtherResources.html">Other resources</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section id="head">
+    <h1>Types of guitars</h1>
+    <p>There are different type of guitars but they can be classified into two types which are <span>acoustic</span> and <span>electric</span></p>
+  </section>
+  <section>
+    <div class="container">
+    <iframe width="560" height="315" class="responsive-iframe" src="https://www.youtube.com/embed/E3vjSbzyYjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+    <hr>
+    <ul>
+      <li id="main">Acoustic</li>
+      <ul>
+        <li id="second">Classical Guitars</li>
+        <img src="pictures/classical guitar.jpg" class="responsive" alt="Classical Guitars">
+        <p id="p">Classical guitars have nylon strings that are tied with a loop at the bridge. Its strings are
+          <br>thicker and the guitar produces a more mellow, softer sound than the steel-stringed guitar.
+        </p>
+        <li id="second">Steel-stringed Guitars</li>
+        <img src="pictures/steel string guitar.jpg" class="responsive" alt="Steel-stringed guitars">
+        <p id="p">Steel-stringed guitars have steel strings that are held by pegs at the bridge. This guitar is
+          <br>also a very beginner friendly guitar.
+        </p>
+      </ul>
+      <li id="main">Electric</li>
+      <ul>
+        <li id="second">Standard Electric Guitars</li>
+        <img src="pictures/standard electric guitar.jpg" class="responsive" alt="Standard Electric guitars">
+        <p id="p">Electric guitars make sound by vibrating strings over a pickup the converts the vibration
+          <br>into electrical signals
+        </p>
+        <li id="second">Semi-acoustic Guitars</li>
+        <img src="pictures/semi-acoustic guitar.jpg" class="responsive" alt="Semi-acoustic guitars">
+        <p id="p">Semi-acoustic guitars have both a sound box and one or more electric pickups</p>
+        <li id="second">Bass Guitars</li>
+        <img src="pictures/bass guitar.jpg" class="responsive" alt="Bass Guitars">
+        <p id="p">Bass guitars have only 4 strings and are very long and heavy</p>
+      </ul>
+    </ul>
+  </section>
+</body>
+
+</html>

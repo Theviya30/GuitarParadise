@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Paradise</title>
+</head>
+<style media="screen">
+  .header {
+    background-color: #fbba07;
+    overflow: hidden;
+  }
+
+  .header a {
+    float: left;
+    color: #545454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .header a:hover {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header a.current {
+    background-color: #545454;
+    color: #fbba07;
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  article {
+    width: clamp(100px, 50%, 600px);
+  }
+
+  h1 {
+    color: #fbba07;
+  }
+
+  #head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  #title{
+    font-size: 100px;
+    margin: 40px;
+    text-align: center;
+  }
+  #logo{
+    height: 140px;
+    width: 140px;
+  }
+</style>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 id="title"><img src="pictures\GUITAR.jpg" alt="logo" id="logo"> Guitar Paradise</h1>
+    <div class="header">
+      <a href="TypesOfGuitars.html">Types of guitars</a>
+      <a href="ThingsNeededToStart.html">Things needed to start</a>
+      <a href="WhereToStart.html">Where to start</a>
+      <a href="OtherResources.html">Other resources</a>
+      <a class="current" href="#">Feedback</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section id="head">
+    <h1>Feedback</h1>
+    <p>Please provide your feedback so we can improve<p>
+  </section>
+  <hr>
+  <form class="feedback" name="feedback" action="" method="post">
+    <fieldset>
+      <legend>Feedback</legend>
+      <p><label for="name">Name: </label><input class="blank" type="text" name="name" id="txtName" value="" required="required" ></p>
+      <p><label for="email">Email: </label><input class="blank" type="email" name="email"  id="txtEmail" value="" required="required"></p>
+      <p> <label for="helpful">Was the website helpful? <br> </label> <input type="radio"  id="txtHelpful" name="helpful" value="Yes" required="required">Yes<br></label> <input type="radio" name="helpful" value="No" required="required">No</p>
+      <p> <label for="improve">Do you have any suggestions on how to improve this website?</label> <br> <textarea name="improve"  id="txtImprove" rows="8" cols="80" required="required"></textarea></p>
+    </fieldset>
+    <p></p>
+    <input type="submit" name="Submit" value="Submit" onclick="submitted()">
+    <input type="reset" name="reset" value="Reset">
+  </form>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script>
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbwXKkFS4yM5-cjZCA4vQhOweQAclWhD7q6abeTFAWJmnpEz1SIGY5LnaJghe-R4_N0E4w/exec'
+ const form = document.forms['feedback']
+
+ form.addEventListener('submit', e => {
+   e.preventDefault()
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     .then(response => console.log('Success!', response))
+     .catch(error => console.error('Error!', error.message))
+ })
+  function submitted()
+ {
+   alert("The form has been submitted. Thank you for your feedback!");
+ }
+</script>
+
+</body>
+
+</html>
